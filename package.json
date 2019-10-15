@@ -23,7 +23,7 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "paramount-ui": "1.86.2",
+    "paramount-ui": "1.86.3",
     "react-native-web": "0.11.5"
   },
   "devDependencies": {
