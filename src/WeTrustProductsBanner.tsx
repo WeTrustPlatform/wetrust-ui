@@ -1,18 +1,15 @@
 import { Box, useTheme, useLayout } from 'paramount-ui';
 import React from 'react';
 
-interface ProductLinkProps {
-  to: string;
-  children?: React.ReactNode;
-}
+import { LinkProps, Link } from './Link';
 
-const ProductLink = (props: ProductLinkProps): JSX.Element => {
-  const { to, children } = props;
+const ProductLink = (props: LinkProps): JSX.Element => {
+  const { children } = props;
   const theme = useTheme();
 
   return (
-    <a
-      href={to}
+    <Link
+      {...props}
       style={{
         fontFamily: theme.fontFamilies.text,
         textDecoration: 'none',
@@ -21,7 +18,7 @@ const ProductLink = (props: ProductLinkProps): JSX.Element => {
       }}
     >
       {children}
-    </a>
+    </Link>
   );
 };
 
