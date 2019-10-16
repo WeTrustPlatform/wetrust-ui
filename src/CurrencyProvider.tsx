@@ -7,7 +7,7 @@ import { useWeb3 } from './Web3Provider';
 
 export type Currency = 'ETH' | 'TRST';
 
-export interface CurrencyContext {
+export interface CurrencyContextValue {
   currency: Currency;
   setCurrency: (currency: Currency) => void;
   tokenInstance: any;
@@ -23,7 +23,7 @@ interface CurrencyProviderProps {
   };
 }
 
-const CurrencyContext = React.createContext<CurrencyContext>({
+const CurrencyContext = React.createContext<CurrencyContextValue>({
   currency: 'TRST',
   setCurrency: () => {},
   tokenInstance: null,
@@ -31,11 +31,11 @@ const CurrencyContext = React.createContext<CurrencyContext>({
   approve: async () => {},
 });
 
-export const useCurrency = () => {
+export const useCurrency = (): CurrencyContextValue => {
   return React.useContext(CurrencyContext);
 };
 
-export const CurrencyProvider = (props: CurrencyProviderProps) => {
+export const CurrencyProvider = (props: CurrencyProviderProps): JSX.Element => {
   const { children, initialCurrency, contracts } = props;
   const [currency, setCurrency] = React.useState(initialCurrency);
   const { account } = useWeb3();

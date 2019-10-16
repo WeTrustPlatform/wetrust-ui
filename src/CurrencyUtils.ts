@@ -35,7 +35,7 @@ export const formatCurrency = (
   return `${Web3.utils.fromWei(bigNumber.toString(), 'ether')} ${currency}`;
 };
 
-export const toBigNumber = (amount: string, currency: Currency) => {
+export const toBigNumber = (amount: string, currency: Currency): BigNumber => {
   if (currency !== 'ETH') {
     const bigNumber = new BigNumber(amount).mul(
       currencyInfoMap[currency].decimalsBn,

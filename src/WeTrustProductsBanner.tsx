@@ -30,15 +30,27 @@ export const WeTrustProductsBanner = (): JSX.Element => {
     xlarge: '0px',
   });
 
+  const boxStyle = getResponsiveValue({
+    xsmall: {
+      paddingTop: 48,
+      backgroundColor: '#222222',
+      height: '100%',
+      flexWrap: 'wrap',
+      flexDirection: 'row',
+      justifyContent: 'center',
+    },
+    medium: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#222222',
+      flexWrap: 'wrap',
+      height: 55,
+    },
+  });
+
   return (
-    <Box
-      flexDirection="row"
-      justifyContent="center"
-      alignItems="center"
-      backgroundColor="#222222"
-      flexWrap="wrap"
-      height={55}
-    >
+    <Box {...boxStyle}>
       <Box paddingRight={40} paddingBottom={paddingBottom}>
         <ProductLink to="https://www.wetrust.io">
           <img

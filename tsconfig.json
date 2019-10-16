@@ -5,6 +5,7 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "esModuleInterop": true,
+    "resolveJsonModule": true,
     "noImplicitAny": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,

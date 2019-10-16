@@ -40,19 +40,12 @@ const DesktopNavigationBarLink = (props: LinkProps) => {
   );
 };
 
-const DesktopNavigationBar = () => {
+const DesktopNavigationBar = (props: NavigationBarProps): JSX.Element => {
+  const { desktopLogoSrc, links } = props;
+
   return (
     <>
-      <Box
-        flexDirection="row"
-        justifyContent="center"
-        alignItems="center"
-        backgroundColor="#222222"
-        flexWrap="wrap"
-        height={55}
-      >
-        <WeTrustProductsBanner />
-      </Box>
+      <WeTrustProductsBanner />
       <Box
         flexDirection="row"
         height={80}
@@ -60,8 +53,16 @@ const DesktopNavigationBar = () => {
         paddingHorizontal={31}
         zIndex={1}
       >
+        <img src={desktopLogoSrc} alt="desktop logo" />
         <Box flexDirection="row" alignItems="center">
-          {/* TODO */}
+          {links.map(link => (
+            <>
+              <DesktopNavigationBarLink key={link.title} {...link}>
+                {link.title}
+              </DesktopNavigationBarLink>
+              <DesktopNavigationBarDivider />
+            </>
+          ))}
           <Box paddingLeft={16}>
             <BlockchainAccountStatus />
           </Box>
@@ -87,17 +88,27 @@ const MobileNavigationMenuLink = (props: LinkProps) => {
   );
 };
 
-interface MobileNavigationMenuProps {
+interface MobileNavigationMenuProps extends NavigationBarProps {
   onClick?: () => void;
 }
 
-const MobileNavigationMenu = (props: MobileNavigationMenuProps) => {
-  const { onClick } = props;
+const MobileNavigationMenu = (
+  props: MobileNavigationMenuProps,
+): JSX.Element => {
+  const { onClick, links } = props;
 
-  return <>{/* TODO */}</>;
+  return (
+    <>
+      {links.map(link => (
+        <MobileNavigationMenuLink key={link.title} onClick={onClick} {...link}>
+          {link.title}
+        </MobileNavigationMenuLink>
+      ))}
+    </>
+  );
 };
 
-const MobileNavigationBar = () => {
+const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
@@ -127,13 +138,12 @@ const MobileNavigationBar = () => {
             </TouchableOpacity>
           </Box>
           <Box paddingBottom={100}>
-            <MobileNavigationMenu onClick={() => setIsMenuOpen(false)} />
+            <MobileNavigationMenu
+              {...props}
+              onClick={() => setIsMenuOpen(false)}
+            />
           </Box>
-          <Box paddingTop={48} backgroundColor="#222222" height="100%">
-            <Box flexWrap="wrap" flexDirection="row" justifyContent="center">
-              <WeTrustProductsBanner />
-            </Box>
-          </Box>
+          <WeTrustProductsBanner />
         </Modal>
       </Container>
       <Divider />
@@ -141,14 +151,20 @@ const MobileNavigationBar = () => {
   );
 };
 
-export const NavigationBar = () => {
+export interface NavigationBarProps {
+  mobileLogoSrc: string;
+  desktopLogoSrc: string;
+  links: (LinkProps & { title: string })[];
+}
+
+export const NavigationBar = (props: NavigationBarProps): JSX.Element => {
   return (
     <>
       <Visible xsmall small medium>
-        <MobileNavigationBar />
+        <MobileNavigationBar {...props} />
       </Visible>
       <Visible large xlarge>
-        <DesktopNavigationBar />
+        <DesktopNavigationBar {...props} />
       </Visible>
     </>
   );

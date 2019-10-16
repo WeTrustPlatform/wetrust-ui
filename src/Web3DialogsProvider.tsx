@@ -1,5 +1,3 @@
-import '../declarations';
-
 import { Dialog } from 'paramount-ui';
 import React from 'react';
 

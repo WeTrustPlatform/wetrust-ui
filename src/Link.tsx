@@ -11,7 +11,7 @@ export interface LinkProps {
   onClick?: () => void;
 }
 
-export const Link = (props: LinkProps) => {
+export const Link = (props: LinkProps): JSX.Element => {
   const { testID, to, children, style, onClick, isExternal } = props;
   const theme = useTheme();
 

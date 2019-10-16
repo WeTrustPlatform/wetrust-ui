@@ -6,6 +6,7 @@ import {
   Row,
   Text,
   Visible,
+  useLayout,
 } from 'paramount-ui';
 import React from 'react';
 
@@ -144,6 +145,9 @@ export const FooterLink = (props: FooterLinkProps): JSX.Element => {
 };
 
 export const Footer = (): JSX.Element => {
+  const { currentScreenSize } = useLayout();
+  console.log(currentScreenSize);
+
   return (
     <>
       <Visible xsmall small medium>
