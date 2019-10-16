@@ -30,7 +30,7 @@
     "bn.js": "5.0.0",
     "date-fns": "2.4.1",
     "lodash": "^4.17.15",
-    "paramount-ui": "1.86.3",
+    "paramount-ui": "1.86.4",
     "react-native-web": "0.11.5",
     "react-router": "5.1.2",
     "react-router-dom": "5.1.2",

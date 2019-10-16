@@ -5703,10 +5703,10 @@ deepmerge@3.3.0, deepmerge@^3.2.0:
   resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-3.3.0.tgz#d3c47fd6f3a93d517b14426b0628a17b0125f5f7"
   integrity sha512-GRQOafGHwMHpjPx9iCvTgpu9NojZ49q794EEL94JVEw6VaeA8XTUyBKvAkOOjBX9oJNiV6G3P+T+tihFjo2TqA==
 
-deepmerge@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.0.0.tgz#3e3110ca29205f120d7cb064960a39c3d2087c09"
-  integrity sha512-YZ1rOP5+kHor4hMAH+HRQnBQHg+wvS1un1hAOuIcxcBy0hzcUf6Jg2a1w65kpoOUnurOfZbERwjI1TfZxNjcww==
+deepmerge@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/deepmerge/-/deepmerge-4.1.1.tgz#ee0866e4019fe62c1276b9062d4c4803d9aea14c"
+  integrity sha512-+qO5WbNBKBaZez95TffdUDnGIo4+r5kmsX8aOb7PDHvXsTbghAmleuxjs6ytNaf5Eg4FGBXDS5vqO61TRi6BMg==
 
 defaults@^1.0.3:
   version "1.0.3"
@@ -12282,19 +12282,19 @@ param-case@^2.1.1:
   dependencies:
     no-case "^2.2.0"
 
-paramount-ui@1.86.3:
-  version "1.86.3"
-  resolved "https://registry.yarnpkg.com/paramount-ui/-/paramount-ui-1.86.3.tgz#a6c6a9fd5f92c9769fd9f0fea4a8aaa19b39a7cb"
-  integrity sha512-pCTJqvfNLAenWjrSsBdN4fKuVhKb2QEJtBX8QLlkQU8MXEzEDVYHF+bokc6Dut6fddCpNF4n4durWjG7eLDaWQ==
+paramount-ui@1.86.4:
+  version "1.86.4"
+  resolved "https://registry.yarnpkg.com/paramount-ui/-/paramount-ui-1.86.4.tgz#0361ff46d60e889b732bbaf7f1672c5ff5beed59"
+  integrity sha512-21WNIKUvEGmiTLfYa1YlZvNgUPx5+YcPci5ea84iEY/0ZJK9iJkJq2EYOD0y5FHjTf5LMLw2wLHAYJuVqSYaIQ==
   dependencies:
-    deepmerge "4.0.0"
+    deepmerge "4.1.1"
     dlv "1.1.3"
     exenv "1.2.2"
     focus-trap "5.0.2"
     react-icons "3.7.0"
     react-native-svg "9.11.1"
     react-native-vector-icons "6.6.0"
-    react-native-web "0.11.5"
+    react-native-web "0.11.7"
     react-spring "9.0.0-beta.1"
 
 parent-module@^1.0.0:
@@ -13279,6 +13279,22 @@ react-native-web@0.11.5:
   version "0.11.5"
   resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.11.5.tgz#adf2eff902fdb32e86be7877294d9a6bb0ad3815"
   integrity sha512-KVvE6s32uBgp5m1BNSfNOXvGo1wt/pORSKvi8oy8tdhAPYqsr0oMuMP3rZd8vk+MpiYt1Z8raS/n+DK2xj85Jg==
+  dependencies:
+    array-find-index "^1.0.2"
+    create-react-class "^15.6.2"
+    debounce "^1.2.0"
+    deep-assign "^3.0.0"
+    fbjs "^1.0.0"
+    hyphenate-style-name "^1.0.2"
+    inline-style-prefixer "^5.0.3"
+    normalize-css-color "^1.0.2"
+    prop-types "^15.6.0"
+    react-timer-mixin "^0.13.4"
+
+react-native-web@0.11.7:
+  version "0.11.7"
+  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.11.7.tgz#d173d5a9b58db23b6d442c4bc4c81e9939adac23"
+  integrity sha512-w1KAxX2FYLS2GAi3w3BnEZg/IUu7FdgHnLmFKHplRnHMV3u1OPB2EVA7ndNdfu7ds4Rn2OZjSXoNh6F61g3gkA==
   dependencies:
     array-find-index "^1.0.2"
     create-react-class "^15.6.2"
