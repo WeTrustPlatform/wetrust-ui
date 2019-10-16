@@ -1,5 +1,8 @@
 {
   "name": "@wetrustplatform/wetrust-ui",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "0.0.1",
   "description": "WeTrust UI Components",
   "main": "cjs/index.js",
