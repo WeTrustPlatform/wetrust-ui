@@ -30,10 +30,10 @@ export const FAQ = (props: FAQProps): JSX.Element => {
           overrides={{
             Touchable: {
               style: {
-                justifyContent: 'space-between',
                 alignItems: 'center',
-                borderBottomWidth: 1,
                 borderBottomColor: theme.colors.border.default,
+                borderBottomWidth: 1,
+                justifyContent: 'space-between',
                 paddingBottom: 24,
               },
             },
