@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.0.2...v1.0.3) (2019-10-17)
+
+
+### Bug Fixes
+
+* sort properties ([5244060](https://github.com/WeTrustPlatform/wetrust-ui/commit/5244060))
+
 ## [1.0.2](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.0.1...v1.0.2) (2019-10-16)
 
 
