@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.0.3...v1.0.4) (2019-10-18)
+
+
+### Bug Fixes
+
+* expose app provider ([08aa3d5](https://github.com/WeTrustPlatform/wetrust-ui/commit/08aa3d5))
+
 ## [1.0.3](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.0.2...v1.0.3) (2019-10-17)
 
 
