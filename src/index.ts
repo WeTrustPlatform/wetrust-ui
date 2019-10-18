@@ -18,3 +18,4 @@ export * from './useSmartContract';
 export * from './Web3DialogsProvider';
 export * from './Web3Provider';
 export * from './WeTrustProductsBanner';
+export * from './AppProvider';
