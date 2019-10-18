@@ -6,6 +6,7 @@ export const CTAButton = (props: ButtonProps): JSX.Element => {
   return (
     <Button
       color="primary"
+      appearance="primary"
       overrides={{
         Touchable: {
           style: ({ appearance }): ViewStyle => ({
@@ -13,11 +14,13 @@ export const CTAButton = (props: ButtonProps): JSX.Element => {
             backgroundColor:
               appearance === 'primary' ? '#e98100' : 'transparent',
             borderWidth: appearance === 'outline' ? 1 : 0,
+            borderColor: '#e98100',
           }),
         },
         Title: {
-          style: (): TextStyle => ({
+          style: ({ appearance }: any): TextStyle => ({
             fontSize: 18,
+            color: appearance === 'primary' ? 'white' : '#e98100',
           }),
         },
       }}

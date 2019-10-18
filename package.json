@@ -3,7 +3,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "WeTrust UI Components",
   "main": "cjs/index.js",
   "module": "esm/index.js",

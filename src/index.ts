@@ -11,6 +11,8 @@ export * from './NavigationBar';
 export * from './RequireEthereumNetwork';
 export * from './RequireMetamaskSetup';
 export * from './RequireWalletSignIn';
+export * from './BlogSection';
+export * from './TeamMember';
 export * from './Tooltip';
 export * from './useBalanceQuery';
 export * from './useBlockQuery';

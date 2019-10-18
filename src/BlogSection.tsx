@@ -165,17 +165,7 @@ export const BlogSection = (): JSX.Element => {
   if (!blogPosts.length) return <Text>Loading...</Text>;
 
   return (
-    <Box paddingVertical={60}>
-      <Box paddingBottom={60}>
-        <Heading
-          align="center"
-          size="xxxlarge"
-          color="secondary"
-          accessibilityLevel={2}
-        >
-          Our Blog
-        </Heading>
-      </Box>
+    <Box>
       <Container>
         <Row>
           <Column large={8} xlarge={8}>
