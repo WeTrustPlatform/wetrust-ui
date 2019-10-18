@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.0.4...v1.1.0) (2019-10-18)
+
+
+### Features
+
+* add components ([67b5e5f](https://github.com/WeTrustPlatform/wetrust-ui/commit/67b5e5f))
+
 ## [1.0.4](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.0.3...v1.0.4) (2019-10-18)
 
 
