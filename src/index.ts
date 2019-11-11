@@ -14,6 +14,7 @@ export * from './RequireWalletSignIn';
 export * from './BlogSection';
 export * from './TeamMember';
 export * from './Tooltip';
+export * from './FAQ';
 export * from './useBalanceQuery';
 export * from './useBlockQuery';
 export * from './useSmartContract';
