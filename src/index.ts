@@ -1,4 +1,5 @@
 export * from './BlockchainAccountStatus';
+export * from './Background';
 export * from './CTAButton';
 export * from './CurrencyProvider';
 export * from './CurrencyUtils';
