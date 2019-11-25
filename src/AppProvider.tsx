@@ -1,4 +1,4 @@
-import { ThemeProvider, LayoutProvider, ToastProvider } from 'paramount-ui';
+import { ThemeProvider } from 'paramount-ui';
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
 
@@ -23,20 +23,16 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
   return (
     <HashRouter basename="/">
       <ThemeProvider>
-        <LayoutProvider>
-          <ToastProvider>
-            <Web3Provider>
-              <Web3DialogsProvider>
-                <CurrencyProvider
-                  contracts={ercContracts}
-                  initialCurrency={initialCurrency}
-                >
-                  {children}
-                </CurrencyProvider>
-              </Web3DialogsProvider>
-            </Web3Provider>
-          </ToastProvider>
-        </LayoutProvider>
+        <Web3Provider>
+          <Web3DialogsProvider>
+            <CurrencyProvider
+              contracts={ercContracts}
+              initialCurrency={initialCurrency}
+            >
+              {children}
+            </CurrencyProvider>
+          </Web3DialogsProvider>
+        </Web3Provider>
       </ThemeProvider>
     </HashRouter>
   );

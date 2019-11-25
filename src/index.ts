@@ -12,6 +12,7 @@ export * from './NavigationBar';
 export * from './RequireEthereumNetwork';
 export * from './RequireMetamaskSetup';
 export * from './RequireWalletSignIn';
+export * from './EnsureHasConnected';
 export * from './BlogSection';
 export * from './TeamMember';
 export * from './Tooltip';
