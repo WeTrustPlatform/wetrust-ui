@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.1.0...v1.2.0) (2019-11-12)
+
+
+### Features
+
+* export components ([cf3a339](https://github.com/WeTrustPlatform/wetrust-ui/commit/cf3a339))
+
 # [1.1.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.0.4...v1.1.0) (2019-10-18)
 
 
