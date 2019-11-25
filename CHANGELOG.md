@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.3.0...v1.4.0) (2019-11-25)
+
+
+### Features
+
+* pure css navigation ([d53d845](https://github.com/WeTrustPlatform/wetrust-ui/commit/d53d845))
+
 # [1.3.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.2.0...v1.3.0) (2019-11-25)
 
 
