@@ -1,0 +1,127 @@
+/*hide the inputs/checkmarks*/
+#check01 {
+  display: none;
+}
+
+/*hide the submenu*/
+ul.submenu {
+  max-height: 0;
+  overflow: hidden;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+/*position the label*/
+label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+/*show the submenu when checked*/
+#check01:checked ~ ul.submenu {
+  max-height: 700px;
+}
+
+.arrow-up {
+  display: none;
+}
+
+#check01:checked ~ .wetrust-products-banner-title .arrow-up {
+  display: block;
+}
+
+#check01:checked ~ .wetrust-products-banner-title .arrow-down {
+  display: none;
+}
+
+.arrow-up {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+
+  border-bottom: 6px solid #ffffff;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+
+  border-top: 6px solid #ffffff;
+}
+
+.wetrust-products-banner-title {
+  padding: 16px;
+  font-family: ProximaNova;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 6px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.product--wrapper {
+  flex-basis: 50%;
+  max-width: 50%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.product--link {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 4px;
+  border: solid 1px #b1b1b1;
+  box-sizing: border-box;
+}
+
+.product--link img {
+  width: 100%;
+  max-height: 16px;
+}
+
+.wrapper {
+  background-color: #222222;
+}
+
+@media only screen and (min-width: 700px) {
+  ul.submenu {
+    justify-content: center;
+    display: flex;
+    overflow: auto;
+    max-height: initial;
+  }
+
+  .wetrust-products-banner-title {
+    display: none;
+  }
+
+  .product--wrapper {
+    padding: 0;
+    flex-basis: auto;
+  }
+
+  .product--link {
+    border: none;
+  }
+
+  .product--link img {
+    max-height: 32px;
+  }
+}

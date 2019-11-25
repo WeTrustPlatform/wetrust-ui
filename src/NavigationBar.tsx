@@ -13,9 +13,8 @@ import { TouchableOpacity, View } from 'react-native';
 
 import { BlockchainAccountStatus } from './BlockchainAccountStatus';
 import { Link, LinkProps } from './Link';
-import { WeTrustProductsBanner } from './WeTrustProductsBanner';
 
-const DesktopNavigationBarDivider = () => (
+const DesktopNavigationBarDivider = (): JSX.Element => (
   <Divider
     orientation="vertical"
     style={{
@@ -24,7 +23,7 @@ const DesktopNavigationBarDivider = () => (
   />
 );
 
-const DesktopNavigationBarLink = (props: LinkProps) => {
+const DesktopNavigationBarLink = (props: LinkProps): JSX.Element => {
   const { children, to, isExternal } = props;
 
   return (
@@ -45,7 +44,6 @@ const DesktopNavigationBar = (props: NavigationBarProps): JSX.Element => {
 
   return (
     <>
-      <WeTrustProductsBanner />
       <Box
         flexDirection="row"
         height={80}
@@ -143,7 +141,6 @@ const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
               onClick={() => setIsMenuOpen(false)}
             />
           </Box>
-          <WeTrustProductsBanner />
         </Modal>
       </Container>
       <Divider />
