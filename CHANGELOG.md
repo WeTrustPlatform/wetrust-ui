@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.2.0...v1.3.0) (2019-11-25)
+
+
+### Features
+
+* force deploy ([3c073e1](https://github.com/WeTrustPlatform/wetrust-ui/commit/3c073e1))
+
 # [1.2.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.1.0...v1.2.0) (2019-11-12)
 
 
