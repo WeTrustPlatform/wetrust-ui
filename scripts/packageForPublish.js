@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+
 const pkg = require('../package.json');
 
 const distPath = path.resolve(__dirname, '../dist');
@@ -10,7 +11,9 @@ fs.copyFileSync(
 );
 
 fs.copyFileSync(path.resolve(__dirname, '../LICENSE'), `${distPath}/LICENSE`);
-
-pkg.main = 'cjs/index.js';
+fs.copyFileSync(
+  path.resolve(__dirname, '../src/wetrust-ui.css'),
+  `${distPath}/wetrust-ui.css`,
+);
 
 fs.writeFileSync(`${distPath}/package.json`, JSON.stringify(pkg, null, 2));

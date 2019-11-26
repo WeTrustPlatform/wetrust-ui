@@ -1,10 +1,10 @@
 /*hide the inputs/checkmarks*/
-#check01 {
+#WeTrustProductsBanner--check {
   display: none;
 }
 
-/*hide the submenu*/
-ul.submenu {
+/*hide the WeTrustProductsBanner--product__list*/
+.WeTrustProductsBanner--product__list {
   max-height: 0;
   overflow: hidden;
   list-style: none;
@@ -15,31 +15,28 @@ ul.submenu {
   padding: 0;
 }
 
-/*position the label*/
-label {
-  position: relative;
-  display: block;
-  cursor: pointer;
-}
-
-/*show the submenu when checked*/
-#check01:checked ~ ul.submenu {
+/*show the WeTrustProductsBanner--product__list when checked*/
+#WeTrustProductsBanner--check:checked ~ .WeTrustProductsBanner--product__list {
   max-height: 700px;
 }
 
-.arrow-up {
+.WeTrustProductsBanner--arrow__up {
   display: none;
 }
 
-#check01:checked ~ .wetrust-products-banner-title .arrow-up {
+#WeTrustProductsBanner--check:checked
+  ~ .WeTrustProductsBanner--title
+  .WeTrustProductsBanner--arrow__up {
   display: block;
 }
 
-#check01:checked ~ .wetrust-products-banner-title .arrow-down {
+#WeTrustProductsBanner--check:checked
+  ~ .WeTrustProductsBanner--title
+  .WeTrustProductsBanner--arrow__down {
   display: none;
 }
 
-.arrow-up {
+.WeTrustProductsBanner--arrow__up {
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
@@ -48,7 +45,7 @@ label {
   border-bottom: 6px solid #ffffff;
 }
 
-.arrow-down {
+.WeTrustProductsBanner--arrow__down {
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
@@ -57,7 +54,10 @@ label {
   border-top: 6px solid #ffffff;
 }
 
-.wetrust-products-banner-title {
+.WeTrustProductsBanner--title {
+  position: relative;
+  display: block;
+  cursor: pointer;
   padding: 16px;
   font-family: ProximaNova;
   font-size: 18px;
@@ -72,14 +72,14 @@ label {
   justify-content: space-between;
 }
 
-.product--wrapper {
+.WeTrustProductsBanner--product__wrapper {
   flex-basis: 50%;
   max-width: 50%;
   padding: 16px;
   box-sizing: border-box;
 }
 
-.product--link {
+.WeTrustProductsBanner--product__link {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -91,37 +91,37 @@ label {
   box-sizing: border-box;
 }
 
-.product--link img {
+.WeTrustProductsBanner--product__link img {
   width: 100%;
   max-height: 16px;
 }
 
-.wrapper {
+.WeTrustProductsBanner {
   background-color: #222222;
 }
 
 @media only screen and (min-width: 700px) {
-  ul.submenu {
+  .WeTrustProductsBanner--product__list {
     justify-content: center;
     display: flex;
     overflow: auto;
     max-height: initial;
   }
 
-  .wetrust-products-banner-title {
+  .WeTrustProductsBanner--title {
     display: none;
   }
 
-  .product--wrapper {
+  .WeTrustProductsBanner--product__wrapper {
     padding: 0;
     flex-basis: auto;
   }
 
-  .product--link {
+  .WeTrustProductsBanner--product__link {
     border: none;
   }
 
-  .product--link img {
+  .WeTrustProductsBanner--product__link img {
     max-height: 32px;
   }
 }
