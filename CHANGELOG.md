@@ -1,3 +1,10 @@
+## [1.4.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.4.0...v1.4.1) (2019-11-26)
+
+
+### Bug Fixes
+
+* deploy ([9b8342e](https://github.com/WeTrustPlatform/wetrust-ui/commit/9b8342e))
+
 # [1.4.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.3.0...v1.4.0) (2019-11-25)
 
 
