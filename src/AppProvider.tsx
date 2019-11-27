@@ -1,6 +1,7 @@
 import { ThemeProvider } from 'paramount-ui';
 import React from 'react';
 import { HashRouter } from 'react-router-dom';
+import { ViewStyle, TextStyle } from 'react-native';
 
 import TRST from './contracts/TRST.json';
 import { CurrencyProvider, Currency } from './CurrencyProvider';
@@ -22,7 +23,29 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
 
   return (
     <HashRouter basename="/">
-      <ThemeProvider>
+      <ThemeProvider
+        value={{
+          overrides: {
+            Button: {
+              Touchable: {
+                style: ({ appearance }): ViewStyle => ({
+                  minWidth: 280,
+                  backgroundColor:
+                    appearance === 'primary' ? '#e98100' : 'transparent',
+                  borderWidth: appearance === 'outline' ? 1 : 0,
+                  borderColor: '#e98100',
+                }),
+              },
+              Title: {
+                style: ({ appearance }: any): TextStyle => ({
+                  fontSize: 18,
+                  color: appearance === 'primary' ? 'white' : '#e98100',
+                }),
+              },
+            },
+          },
+        }}
+      >
         <Web3Provider>
           <Web3DialogsProvider>
             <CurrencyProvider

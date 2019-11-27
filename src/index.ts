@@ -1,6 +1,5 @@
 export * from './BlockchainAccountStatus';
 export * from './Background';
-export * from './CTAButton';
 export * from './CurrencyProvider';
 export * from './CurrencyUtils';
 export * from './CustomDialog';
@@ -24,3 +23,4 @@ export * from './Web3DialogsProvider';
 export * from './Web3Provider';
 export * from './WeTrustProductsBanner';
 export * from './AppProvider';
+export * from 'paramount-ui';

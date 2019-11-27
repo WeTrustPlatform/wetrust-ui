@@ -6,11 +6,11 @@ import {
   Paragraph,
   Row,
   Text,
+  Button,
 } from 'paramount-ui';
 import React from 'react';
 import { ImageBackground } from 'react-native';
 
-import { CTAButton } from './CTAButton';
 import { Link } from './Link';
 
 interface BlogPost {
@@ -202,7 +202,7 @@ export const BlogSection = (): JSX.Element => {
       </Container>
       <Box paddingVertical={72} alignItems="center">
         <Link to="https://blog.wetrust.io" isExternal>
-          <CTAButton appearance="outline" title="Read more" />
+          <Button appearance="outline" title="Read more" />
         </Link>
       </Box>
     </Box>
