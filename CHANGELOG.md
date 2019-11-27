@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.5.0...v1.5.1) (2019-11-27)
+
+
+### Bug Fixes
+
+* button remove minwidth ([7d24cc1](https://github.com/WeTrustPlatform/wetrust-ui/commit/7d24cc1))
+* theme edits ([dc987fc](https://github.com/WeTrustPlatform/wetrust-ui/commit/dc987fc))
+
 # [1.5.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.4.1...v1.5.0) (2019-11-27)
 
 
