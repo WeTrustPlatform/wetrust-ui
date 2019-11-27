@@ -29,7 +29,6 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
             Button: {
               Touchable: {
                 style: ({ appearance }): ViewStyle => ({
-                  minWidth: 280,
                   backgroundColor:
                     appearance === 'primary' ? '#e98100' : 'transparent',
                   borderWidth: appearance === 'outline' ? 1 : 0,
@@ -39,7 +38,7 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
               Title: {
                 style: ({ appearance }: any): TextStyle => ({
                   fontSize: 18,
-                  color: appearance === 'primary' ? 'white' : '#e98100',
+                  color: appearance === 'primary' ? '#ffffff' : '#e98100',
                 }),
               },
             },
