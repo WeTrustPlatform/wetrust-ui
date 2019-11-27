@@ -5,6 +5,7 @@ import { Box, Button } from 'paramount-ui';
 storiesOf('Button', module).add('Appearances', () => (
   <Box>
     <Button appearance="primary" title="primary" />
+    <Button appearance="primary" title="loading" isLoading />
     <Button appearance="minimal" title="minimal" />
     <Button appearance="outline" title="outline" />
   </Box>

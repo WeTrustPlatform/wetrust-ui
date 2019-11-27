@@ -71,7 +71,7 @@ const DesktopNavigationBar = (props: NavigationBarProps): JSX.Element => {
   );
 };
 
-const MobileNavigationMenuLink = (props: LinkProps) => {
+const MobileNavigationMenuLink = (props: LinkProps): JSX.Element => {
   const { children, to, onClick, isExternal } = props;
 
   return (

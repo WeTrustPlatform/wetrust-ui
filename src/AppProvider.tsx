@@ -30,20 +30,78 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
             text: 'proxima-nova, Arial, Helvetica, sans-serif',
           },
           overrides: {
+            Alert: {
+              Root: {
+                style: ({ intent }): ViewStyle => {
+                  if (intent === 'danger') {
+                    return {
+                      backgroundColor: '#fffcfc',
+                      borderWidth: 1,
+                      borderLeftWidth: 1,
+                      borderColor: '#d53939',
+                    };
+                  }
+
+                  if (intent === 'success') {
+                    return {
+                      backgroundColor: '#f9fffe',
+                      borderWidth: 1,
+                      borderLeftWidth: 1,
+                      borderColor: '#67c5bb',
+                    };
+                  }
+
+                  return {};
+                },
+              },
+              Description: {
+                props: ({ intent }) => {
+                  if (intent === 'danger') {
+                    return {
+                      align: 'center',
+                      color: '#d53939',
+                    };
+                  }
+
+                  if (intent === 'success') {
+                    return {
+                      align: 'center',
+                      color: '#67c5bb',
+                    };
+                  }
+
+                  return { align: 'center' };
+                },
+              },
+            },
             Button: {
               Touchable: {
-                style: ({ appearance }): ViewStyle => ({
-                  backgroundColor:
-                    appearance === 'primary' ? '#eb7209' : 'transparent',
-                  borderWidth: appearance === 'outline' ? 1 : 0,
-                  borderColor: '#eb7209',
-                }),
+                style: ({ appearance, isLoading }): ViewStyle => {
+                  const backgroundColor = isLoading
+                    ? '#fffcf5'
+                    : appearance === 'primary'
+                    ? '#eb7209'
+                    : 'transparent';
+
+                  return {
+                    backgroundColor,
+                    borderWidth: appearance === 'outline' ? 1 : 0,
+                    borderColor: '#eb7209',
+                  };
+                },
               },
               Title: {
-                style: ({ appearance }: any): TextStyle => ({
-                  fontSize: 18,
-                  color: appearance === 'primary' ? '#ffffff' : '#eb7209',
-                }),
+                style: ({ appearance }: any): TextStyle => {
+                  return {
+                    fontSize: 18,
+                    color: appearance === 'primary' ? '#ffffff' : '#eb7209',
+                  };
+                },
+              },
+              Loading: {
+                props: {
+                  appearance: 'primary',
+                },
               },
             },
           },
