@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.4.1...v1.5.0) (2019-11-27)
+
+
+### Features
+
+* export paramount instead ([c2906c8](https://github.com/WeTrustPlatform/wetrust-ui/commit/c2906c8))
+
 ## [1.4.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.4.0...v1.4.1) (2019-11-26)
 
 
