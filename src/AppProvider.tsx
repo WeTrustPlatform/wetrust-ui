@@ -25,20 +25,24 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
     <HashRouter basename="/">
       <ThemeProvider
         value={{
+          fontFamilies: {
+            heading: 'proxima-nova, Arial, Helvetica, sans-serif',
+            text: 'proxima-nova, Arial, Helvetica, sans-serif',
+          },
           overrides: {
             Button: {
               Touchable: {
                 style: ({ appearance }): ViewStyle => ({
                   backgroundColor:
-                    appearance === 'primary' ? '#e98100' : 'transparent',
+                    appearance === 'primary' ? '#eb7209' : 'transparent',
                   borderWidth: appearance === 'outline' ? 1 : 0,
-                  borderColor: '#e98100',
+                  borderColor: '#eb7209',
                 }),
               },
               Title: {
                 style: ({ appearance }: any): TextStyle => ({
                   fontSize: 18,
-                  color: appearance === 'primary' ? '#ffffff' : '#e98100',
+                  color: appearance === 'primary' ? '#ffffff' : '#eb7209',
                 }),
               },
             },
