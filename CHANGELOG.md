@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.5.1...v1.6.0) (2019-11-27)
+
+
+### Features
+
+* update toast colors ([2509dab](https://github.com/WeTrustPlatform/wetrust-ui/commit/2509dab))
+
 ## [1.5.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.5.0...v1.5.1) (2019-11-27)
 
 
