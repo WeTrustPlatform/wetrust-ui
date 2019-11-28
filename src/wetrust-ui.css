@@ -1,3 +1,5 @@
+/* WeTrustProductsBanner */
+
 /*hide the inputs/checkmarks*/
 #WeTrustProductsBanner--check {
   display: none;
@@ -59,7 +61,7 @@
   display: block;
   cursor: pointer;
   padding: 16px;
-  font-family: ProximaNova;
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -123,5 +125,97 @@
 
   .WeTrustProductsBanner--product__link img {
     max-height: 32px;
+  }
+}
+
+/* Footer */
+
+.Footer--link__nav {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  color: #7e7e7e;
+  font-weight: normal;
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #7e7e7e;
+}
+
+.Footer--link__social {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.Footer--link__facebook {
+  color: #3291e9;
+}
+
+.Footer--link__twitter {
+  color: #00c6ff;
+}
+
+.Footer--link__blog {
+  color: #00d383;
+}
+
+.Footer--copyright {
+  font-family: proxima-nova, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  color: #7e7e7e;
+}
+
+.Footer--navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 24px;
+}
+
+.Footer--social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 24px;
+}
+
+.Footer {
+  background-color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  border-top-color: #eee;
+  border-top-width: 1px;
+  align-items: center;
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  flex-direction: column;
+}
+
+.Footer--sitemap {
+  display: flex;
+  width: 100%;
+  padding-bottom: 24px;
+}
+
+@media only screen and (min-width: 700px) {
+  .Footer--navigation {
+    flex-direction: row;
+  }
+
+  .Footer--social {
+    flex-direction: row;
+  }
+
+  .Footer--sitemap {
+    align-items: center;
+    flex-direction: column;
   }
 }
