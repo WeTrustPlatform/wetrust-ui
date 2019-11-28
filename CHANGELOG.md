@@ -1,3 +1,11 @@
+# [1.7.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.6.0...v1.7.0) (2019-11-28)
+
+
+### Features
+
+* css footer ([cd87fda](https://github.com/WeTrustPlatform/wetrust-ui/commit/cd87fda))
+* install metamask contents ([4c7c266](https://github.com/WeTrustPlatform/wetrust-ui/commit/4c7c266))
+
 # [1.6.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.5.1...v1.6.0) (2019-11-27)
 
 
