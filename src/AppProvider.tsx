@@ -25,6 +25,11 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
     <HashRouter basename="/">
       <ThemeProvider
         value={{
+          headingSizes: {
+            xxxlarge: {
+              fontSize: 48,
+            },
+          },
           fontFamilies: {
             heading: 'proxima-nova, Arial, Helvetica, sans-serif',
             text: 'proxima-nova, Arial, Helvetica, sans-serif',

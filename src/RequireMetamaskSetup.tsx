@@ -1,4 +1,4 @@
-import { Box, Heading, Text } from 'paramount-ui';
+import { Box, Heading, Text, Container, Spacing, Button } from 'paramount-ui';
 import React from 'react';
 
 const METAMASK_CHROME_LINK =
@@ -7,35 +7,55 @@ const METAMASK_CHROME_LINK =
 const METAMASK_FIREFOX_LINK =
   'https://addons.mozilla.org/en-US/firefox/addon/ether-metamask/';
 
-export const RequireMetamaskSetup = () => {
-  const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+const MetaMaskIcon = () => (
+  <img
+    style={{ width: 32, height: 32 }}
+    src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1574923931/meta-mask.jpg"
+  />
+);
+
+export const RequireMetamaskSetup = (): JSX.Element => {
+  const handlePressGetMetamask = React.useCallback(() => {
+    const isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+    if (isFirefox) {
+      window.open(METAMASK_FIREFOX_LINK, '_blank');
+    } else {
+      window.open(METAMASK_CHROME_LINK, '_blank');
+    }
+  }, []);
 
   return (
     <Box padding={48} alignItems="center">
-      <Box maxWidth={500}>
+      <Container size="medium">
         <Heading
           align="center"
-          testID="REQUIRE_METAMASK"
           size="xxxlarge"
-          color="secondary"
+          weight="bold"
+          testID="SIGNIN_METAMASK_TITLE"
         >
-          Wallet required
+          Install MetaMask
         </Heading>
-        <Box paddingVertical={24}>
-          <Text size="large" align="center">
-            To continue, please attach a wallet to the session. You can use your
-            browser and install{' '}
-            <a
-              style={{ textDecoration: 'none' }}
-              href={isFirefox ? METAMASK_FIREFOX_LINK : METAMASK_CHROME_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Text color="link">MetaMask extension.</Text>
-            </a>{' '}
-          </Text>
+        <Spacing size="xxlarge" />
+        <Text align="center" size="large">
+          To use WeTrust Identity, you need a web3 wallet like the MetaMask
+          extension for your browser to store your Ether, and to sign
+          transactions.
+        </Text>
+        <Spacing size="xxlarge" />
+        <Box alignItems="center">
+          <Button
+            appearance="outline"
+            onPress={handlePressGetMetamask}
+            title="Get MetaMask"
+            overrides={{
+              Touchable: { style: { width: 280 } },
+              IconBefore: {
+                component: MetaMaskIcon,
+              },
+            }}
+          />
         </Box>
-      </Box>
+      </Container>
     </Box>
   );
 };
