@@ -34,7 +34,7 @@ export const FAQ = (props: FAQProps): JSX.Element => {
                 borderBottomColor: theme.colors.border.default,
                 borderBottomWidth: 1,
                 justifyContent: 'space-between',
-                paddingBottom: 24,
+                paddingVertical: 24,
               },
             },
             Title: {

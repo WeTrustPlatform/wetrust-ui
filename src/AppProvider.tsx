@@ -25,6 +25,11 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
     <HashRouter basename="/">
       <ThemeProvider
         value={{
+          colors: {
+            text: {
+              link: '#3fa296',
+            },
+          },
           headingSizes: {
             xxxlarge: {
               fontSize: 48,

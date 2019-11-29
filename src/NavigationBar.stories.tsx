@@ -5,8 +5,8 @@ import { NavigationBar } from './NavigationBar';
 
 storiesOf('NavigationBar', module).add('Default', () => (
   <NavigationBar
-    desktopLogoSrc="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1571201466/trusted-oracle-logo-desktop.svg"
-    mobileLogoSrc="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1571201466/trusted-oracle-logo-desktop.svg"
+    desktopLogoSrc="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1573701464/wetrust-identity-desktop-logo.svg"
+    mobileLogoSrc="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1573701366/wetrust-identity-mobile-logo.svg"
     links={[
       { to: '/', title: 'Home' },
       { to: '/ask-question', title: 'Ask a question' },

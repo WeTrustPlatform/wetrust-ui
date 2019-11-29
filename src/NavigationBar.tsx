@@ -77,7 +77,7 @@ const MobileNavigationMenuLink = (props: LinkProps): JSX.Element => {
   return (
     <Link to={to} onClick={onClick} isExternal={isExternal}>
       <Box alignItems="center" paddingVertical={16}>
-        <Heading size="xxlarge" color="link">
+        <Heading weight="bold" size="xxlarge" color="link">
           {children}
         </Heading>
       </Box>
@@ -107,6 +107,7 @@ const MobileNavigationMenu = (
 };
 
 const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
+  const { mobileLogoSrc } = props;
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
@@ -118,6 +119,7 @@ const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
           justifyContent="space-between"
           zIndex={1}
         >
+          <img src={mobileLogoSrc} alt="identity mobile logo" />
           <Box flexDirection="row" alignItems="center">
             <BlockchainAccountStatus />
             <TouchableOpacity onPress={() => setIsMenuOpen(true)}>
@@ -128,12 +130,22 @@ const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
           </Box>
         </Box>
         <Modal visible={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)}>
-          <Box flexDirection="row" height={60} justifyContent="flex-end">
-            <TouchableOpacity onPress={() => setIsMenuOpen(false)}>
-              <View style={{ padding: 16 }}>
-                <Icon name="x" size={32} />
-              </View>
-            </TouchableOpacity>
+          <Box
+            flexDirection="row"
+            height={60}
+            paddingHorizontal={16}
+            justifyContent="space-between"
+            zIndex={1}
+          >
+            <img src={mobileLogoSrc} alt="identity mobile logo" />
+            <Box flexDirection="row" alignItems="center">
+              <BlockchainAccountStatus />
+              <TouchableOpacity onPress={() => setIsMenuOpen(false)}>
+                <View style={{ padding: 16, paddingRight: 8 }}>
+                  <Icon name="x" size={32} />
+                </View>
+              </TouchableOpacity>
+            </Box>
           </Box>
           <Box paddingBottom={100}>
             <MobileNavigationMenu
