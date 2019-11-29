@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.7.1...v1.7.2) (2019-11-29)
+
+
+### Bug Fixes
+
+* allow top node ([439e65b](https://github.com/WeTrustPlatform/wetrust-ui/commit/439e65b))
+
 ## [1.7.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.7.0...v1.7.1) (2019-11-29)
 
 
