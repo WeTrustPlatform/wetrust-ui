@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.7.0...v1.7.1) (2019-11-29)
+
+
+### Bug Fixes
+
+* faq, nav bar ([a2efc7f](https://github.com/WeTrustPlatform/wetrust-ui/commit/a2efc7f))
+
 # [1.7.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.6.0...v1.7.0) (2019-11-28)
 
 
