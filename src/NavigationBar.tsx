@@ -107,7 +107,7 @@ const MobileNavigationMenu = (
 };
 
 const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
-  const { mobileLogoSrc } = props;
+  const { mobileLogoSrc, mobileTopNode } = props;
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
@@ -130,6 +130,7 @@ const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
           </Box>
         </Box>
         <Modal visible={isMenuOpen} onRequestClose={() => setIsMenuOpen(false)}>
+          {mobileTopNode}
           <Box
             flexDirection="row"
             height={60}
@@ -163,6 +164,7 @@ const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
 export interface NavigationBarProps {
   mobileLogoSrc: string;
   desktopLogoSrc: string;
+  mobileTopNode?: React.ReactNode;
   links: (LinkProps & { title: string })[];
 }
 
