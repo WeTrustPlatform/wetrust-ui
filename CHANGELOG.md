@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.7.2...v1.8.0) (2019-12-05)
+
+
+### Features
+
+* add image uploader ([b00e1ac](https://github.com/WeTrustPlatform/wetrust-ui/commit/b00e1ac))
+
 ## [1.7.2](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.7.1...v1.7.2) (2019-11-29)
 
 
