@@ -1,3 +1,11 @@
+## [1.8.3](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.2...v1.8.3) (2019-12-06)
+
+
+### Bug Fixes
+
+* background logo ([67b7f60](https://github.com/WeTrustPlatform/wetrust-ui/commit/67b7f60))
+* wetrust logo background ([0bc655a](https://github.com/WeTrustPlatform/wetrust-ui/commit/0bc655a))
+
 ## [1.8.2](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.1...v1.8.2) (2019-12-06)
 
 
