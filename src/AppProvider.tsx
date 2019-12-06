@@ -46,6 +46,16 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
               lineHeight: 32,
             },
           },
+          textSizes: {
+            large: {
+              fontSize: 24,
+              lineHeight: 32,
+            },
+            medium: {
+              fontSize: 18,
+              lineHeight: 24,
+            },
+          },
           fontFamilies: {
             heading: 'proxima-nova, Arial, Helvetica, sans-serif',
             text: 'proxima-nova, Arial, Helvetica, sans-serif',

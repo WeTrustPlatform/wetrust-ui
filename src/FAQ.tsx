@@ -54,6 +54,7 @@ export const FAQ = (props: FAQProps): JSX.Element => {
           <Box>
             <Spacing size="large" />
             <Text>{faq.content}</Text>
+            <Spacing size="large" />
           </Box>
         </Collapsible>
       ))}
