@@ -25,7 +25,6 @@ export const Background = (props: BackgroundProps): JSX.Element => {
       <div
         style={{
           backgroundImage: `url('https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1573530837/wetrust-bg.jpg')`,
-          height: 400,
         }}
       >
         {children}
