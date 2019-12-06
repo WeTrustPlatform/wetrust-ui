@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.0...v1.8.1) (2019-12-06)
+
+
+### Bug Fixes
+
+* theme vars ([f1e1074](https://github.com/WeTrustPlatform/wetrust-ui/commit/f1e1074))
+
 # [1.8.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.7.2...v1.8.0) (2019-12-05)
 
 
