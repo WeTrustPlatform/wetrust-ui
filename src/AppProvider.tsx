@@ -27,12 +27,23 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
         value={{
           colors: {
             text: {
+              default: '#7e7e7e',
               link: '#3fa296',
             },
           },
+
           headingSizes: {
             xxxlarge: {
               fontSize: 48,
+              lineHeight: 56,
+            },
+            xxlarge: {
+              fontSize: 36,
+              lineHeight: 46,
+            },
+            large: {
+              fontSize: 24,
+              lineHeight: 32,
             },
           },
           fontFamilies: {
@@ -40,6 +51,13 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
             text: 'proxima-nova, Arial, Helvetica, sans-serif',
           },
           overrides: {
+            Heading: {
+              style: ({ color }): TextStyle => {
+                return {
+                  color: color || '#515151',
+                };
+              },
+            },
             Alert: {
               Root: {
                 style: ({ intent }): ViewStyle => {
