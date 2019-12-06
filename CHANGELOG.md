@@ -1,3 +1,10 @@
+## [1.8.4](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.3...v1.8.4) (2019-12-06)
+
+
+### Bug Fixes
+
+* default heading colors ([16ad3be](https://github.com/WeTrustPlatform/wetrust-ui/commit/16ad3be))
+
 ## [1.8.3](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.2...v1.8.3) (2019-12-06)
 
 
