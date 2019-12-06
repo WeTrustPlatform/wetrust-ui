@@ -27,6 +27,9 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
         value={{
           colors: {
             text: {
+              // eslint-disable-next-line
+              // @ts-ignore
+              dark: '#515151',
               default: '#7e7e7e',
               link: '#3fa296',
             },
@@ -61,13 +64,6 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
             text: 'proxima-nova, Arial, Helvetica, sans-serif',
           },
           overrides: {
-            Heading: {
-              style: ({ color }): TextStyle => {
-                return {
-                  color: color || '#515151',
-                };
-              },
-            },
             Alert: {
               Root: {
                 style: ({ intent }): ViewStyle => {

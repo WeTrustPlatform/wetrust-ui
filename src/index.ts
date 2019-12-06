@@ -26,3 +26,4 @@ export * from './Web3Provider';
 export * from './WeTrustProductsBanner';
 export * from './AppProvider';
 export * from 'paramount-ui';
+export { Heading } from './Heading';

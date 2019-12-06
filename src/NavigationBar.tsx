@@ -51,7 +51,9 @@ const DesktopNavigationBar = (props: NavigationBarProps): JSX.Element => {
         paddingHorizontal={31}
         zIndex={1}
       >
-        <img src={desktopLogoSrc} alt="desktop logo" />
+        <Link style={{ display: 'flex', alignItems: 'center' }} to="/">
+          <img src={desktopLogoSrc} alt="desktop logo" />
+        </Link>
         <Box flexDirection="row" alignItems="center">
           {links.map(link => (
             <>
@@ -119,7 +121,13 @@ const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
           justifyContent="space-between"
           zIndex={1}
         >
-          <img src={mobileLogoSrc} alt="identity mobile logo" />
+          <Link
+            style={{ display: 'flex', alignItems: 'center' }}
+            to="/"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <img src={mobileLogoSrc} alt="identity mobile logo" />
+          </Link>
           <Box flexDirection="row" alignItems="center">
             <BlockchainAccountStatus />
             <TouchableOpacity onPress={() => setIsMenuOpen(true)}>
@@ -138,7 +146,13 @@ const MobileNavigationBar = (props: NavigationBarProps): JSX.Element => {
             justifyContent="space-between"
             zIndex={1}
           >
-            <img src={mobileLogoSrc} alt="identity mobile logo" />
+            <Link
+              style={{ display: 'flex', alignItems: 'center' }}
+              to="/"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <img src={mobileLogoSrc} alt="identity mobile logo" />
+            </Link>
             <Box flexDirection="row" alignItems="center">
               <BlockchainAccountStatus />
               <TouchableOpacity onPress={() => setIsMenuOpen(false)}>

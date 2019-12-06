@@ -41,6 +41,7 @@ export const FAQ = (props: FAQProps): JSX.Element => {
               props: {
                 size: 'large',
                 weight: 'bold',
+                color: 'dark',
               },
             },
             IconClose: {
