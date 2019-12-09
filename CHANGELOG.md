@@ -1,3 +1,10 @@
+## [1.8.5](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.4...v1.8.5) (2019-12-09)
+
+
+### Bug Fixes
+
+* blockchain state ([ee27245](https://github.com/WeTrustPlatform/wetrust-ui/commit/ee27245))
+
 ## [1.8.4](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.3...v1.8.4) (2019-12-06)
 
 
