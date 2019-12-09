@@ -62,23 +62,28 @@ const initialState: State = {
 };
 
 const getWeb3State = async (web3: Web3): Promise<State> => {
-  const account = await getAccount(web3);
-  const networkId = await getNetworkId(web3);
-  const providerName = await getProviderName(web3);
+  try {
+    const account = await getAccount(web3);
+    const networkId = await getNetworkId(web3);
+    const providerName = await getProviderName(web3);
 
-  let isConnected = false;
+    let isConnected = false;
 
-  if (providerName === 'metamask') {
-    isConnected = await window.ethereum._metamask.isApproved();
+    if (providerName === 'metamask') {
+      isConnected = await window.ethereum._metamask.isApproved();
+    }
+
+    return {
+      isConnected,
+      account,
+      networkId,
+      providerName,
+      web3IsLoading: false,
+    };
+  } catch (error) {
+    console.error(error);
+    return initialState;
   }
-
-  return {
-    isConnected,
-    account,
-    networkId,
-    providerName,
-    web3IsLoading: false,
-  };
 };
 
 export interface Web3Context extends State {
@@ -120,7 +125,7 @@ interface Web3ProviderProps {
 export const Web3Provider = (props: Web3ProviderProps): JSX.Element => {
   const {
     children,
-    fallbackRPCEndpoint = `https://mainnet.infura.io/v3/022f489bd91a47f3960f6f70333bdb76`,
+    fallbackRPCEndpoint = `https://mainnet.infura.io/v3/63aa8e835b874b409e5d46af84b25aa0`,
     onChangeAccount = (): void => {},
   } = props;
   const [state, dispatch] = React.useReducer(reducer, initialState);

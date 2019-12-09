@@ -11,6 +11,8 @@ import { Web3Provider } from './Web3Provider';
 export interface AppProviderProps {
   children?: React.ReactNode;
   initialCurrency?: Currency;
+  fallbackRPCEndpoint?: string;
+  onChangeAccount?: (account: string) => void;
 }
 
 const ercContracts = {
@@ -19,7 +21,12 @@ const ercContracts = {
 };
 
 export const AppProvider = (props: AppProviderProps): JSX.Element => {
-  const { children, initialCurrency = 'ETH' } = props;
+  const {
+    children,
+    initialCurrency = 'ETH',
+    onChangeAccount,
+    fallbackRPCEndpoint,
+  } = props;
 
   return (
     <HashRouter basename="/">
@@ -141,7 +148,10 @@ export const AppProvider = (props: AppProviderProps): JSX.Element => {
           },
         }}
       >
-        <Web3Provider>
+        <Web3Provider
+          onChangeAccount={onChangeAccount}
+          fallbackRPCEndpoint={fallbackRPCEndpoint}
+        >
           <Web3DialogsProvider>
             <CurrencyProvider
               contracts={ercContracts}

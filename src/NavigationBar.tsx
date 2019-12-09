@@ -56,12 +56,12 @@ const DesktopNavigationBar = (props: NavigationBarProps): JSX.Element => {
         </Link>
         <Box flexDirection="row" alignItems="center">
           {links.map(link => (
-            <>
+            <React.Fragment key={link.title}>
               <DesktopNavigationBarLink key={link.title} {...link}>
                 {link.title}
               </DesktopNavigationBarLink>
               <DesktopNavigationBarDivider />
-            </>
+            </React.Fragment>
           ))}
           <Box paddingLeft={16}>
             <BlockchainAccountStatus />

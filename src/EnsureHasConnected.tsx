@@ -19,8 +19,8 @@ export const EnsureHasConnected = (
     return <RequireMetamaskPrivacyApproval />;
   }
 
-  if (!account) return <RequireWalletSignIn />;
   if (!hasWallet) return <RequireMetamaskSetup />;
+  if (!account) return <RequireWalletSignIn />;
 
   return <>{children}</>;
 };
