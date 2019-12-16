@@ -1,3 +1,11 @@
+## [1.8.6](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.5...v1.8.6) (2019-12-16)
+
+
+### Bug Fixes
+
+* app provider ([c201363](https://github.com/WeTrustPlatform/wetrust-ui/commit/c201363))
+* detect account ([154e837](https://github.com/WeTrustPlatform/wetrust-ui/commit/154e837))
+
 ## [1.8.5](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.4...v1.8.5) (2019-12-09)
 
 
