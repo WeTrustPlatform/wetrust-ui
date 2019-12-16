@@ -12,7 +12,7 @@ export interface AppProviderProps {
   children?: React.ReactNode;
   initialCurrency?: Currency;
   fallbackRPCEndpoint?: string;
-  onChangeAccount?: (account: string) => void;
+  onChangeAccount?: (account: string | null) => void;
 }
 
 const ercContracts = {
