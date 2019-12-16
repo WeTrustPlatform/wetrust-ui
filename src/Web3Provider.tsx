@@ -119,7 +119,7 @@ const reducer = (state: State, action: Action): State => {
 interface Web3ProviderProps {
   children?: React.ReactNode;
   fallbackRPCEndpoint?: string;
-  onChangeAccount?: (account: string) => void;
+  onChangeAccount?: (account: string | null) => void;
 }
 
 export const Web3Provider = (props: Web3ProviderProps): JSX.Element => {
@@ -147,32 +147,32 @@ export const Web3Provider = (props: Web3ProviderProps): JSX.Element => {
     });
   }, [fallbackRPCEndpoint, web3]);
 
+  const handleUpdateWeb3State = React.useCallback((): void => {
+    getWeb3State(web3).then(web3State => {
+      const { account: newAccount, networkId: newNetworkId } = web3State;
+
+      // Changed account
+      if (account !== newAccount) {
+        onChangeAccount(newAccount);
+        dispatch({ type: 'update', payload: web3State });
+      }
+
+      // Changed network
+      if (networkId !== newNetworkId) {
+        dispatch({ type: 'update', payload: web3State });
+      }
+    });
+  }, [account, networkId, web3, onChangeAccount]);
+
   // Subscribe
   React.useEffect(() => {
-    const updateWeb3State = (): void => {
-      getWeb3State(web3).then(web3State => {
-        const { account: newAccount, networkId: newNetworkId } = web3State;
-
-        // Changed account
-        if (account && newAccount && account !== newAccount) {
-          onChangeAccount(newAccount);
-          dispatch({ type: 'update', payload: web3State });
-        }
-
-        // Changed network
-        if (networkId !== newNetworkId) {
-          dispatch({ type: 'update', payload: web3State });
-        }
-      });
-    };
-
     // Only Metamask provides a listener
     const currentProvider = web3.currentProvider as any;
 
     if (currentProvider.publicConfigStore) {
-      currentProvider.publicConfigStore.on('update', updateWeb3State);
+      currentProvider.publicConfigStore.on('update', handleUpdateWeb3State);
     }
-  }, [account, networkId, fallbackRPCEndpoint, web3, onChangeAccount]);
+  }, [web3, handleUpdateWeb3State]);
 
   return (
     <Web3Context.Provider
