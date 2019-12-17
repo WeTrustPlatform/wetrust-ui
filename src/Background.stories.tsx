@@ -17,7 +17,7 @@ storiesOf('Background', module)
   ))
   .add('Dark', () => (
     <Background pattern="dark-pattern">
-      <Box width={60} height={60} />
+      <Box width={60} height={400} />
     </Background>
   ))
   .add('Logo', () => (
