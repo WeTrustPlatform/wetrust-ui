@@ -1,3 +1,10 @@
+## [1.8.7](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.6...v1.8.7) (2019-12-17)
+
+
+### Bug Fixes
+
+* background fix ([1c176b3](https://github.com/WeTrustPlatform/wetrust-ui/commit/1c176b3))
+
 ## [1.8.6](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.5...v1.8.6) (2019-12-16)
 
 
