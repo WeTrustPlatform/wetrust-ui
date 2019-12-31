@@ -1,6 +1,12 @@
 import React from 'react';
 
-export const Footer = (): JSX.Element => {
+export interface FooterProps {
+  tosLink?: string;
+}
+
+export const Footer = (props: FooterProps): JSX.Element => {
+  const { tosLink } = props;
+
   return (
     <div className="Footer">
       <div className="Footer--sitemap">
@@ -13,7 +19,10 @@ export const Footer = (): JSX.Element => {
           </a>
           <a
             className="Footer--link__nav"
-            href="https://cryptounlocked.wetrust.io/_Crypto_Unlocked_Terms_and_Conditions_v1.3.pdf"
+            href={
+              tosLink ||
+              'https://cryptounlocked.wetrust.io/_Crypto_Unlocked_Terms_and_Conditions_v1.3.pdf'
+            }
           >
             Terms and Conditions
           </a>

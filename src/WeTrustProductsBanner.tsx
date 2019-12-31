@@ -20,29 +20,7 @@ export const WeTrustProductsBanner = (): JSX.Element => {
           >
             <img
               alt="WeTrust"
-              src="https://d1pzjb43ehhiia.cloudfront.net/logo-images/wetrust-global-logo.svg"
-            />
-          </a>
-        </li>
-        <li className="WeTrustProductsBanner--product__wrapper">
-          <a
-            className="WeTrustProductsBanner--product__link"
-            href="https://spring.wetrust.io"
-          >
-            <img
-              alt="Spring"
-              src="https://d1pzjb43ehhiia.cloudfront.net/logo-images/spring-global-logo.svg"
-            />
-          </a>
-        </li>
-        <li className="WeTrustProductsBanner--product__wrapper">
-          <a
-            className="WeTrustProductsBanner--product__link"
-            href="https://staking.wetrust.io"
-          >
-            <img
-              alt="Staking"
-              src="https://d1pzjb43ehhiia.cloudfront.net/logo-images/staking-global-logo.svg"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775429/banner-we-trust.svg"
             />
           </a>
         </li>
@@ -53,7 +31,29 @@ export const WeTrustProductsBanner = (): JSX.Element => {
           >
             <img
               alt="TLC"
-              src="https://d1pzjb43ehhiia.cloudfront.net/logo-images/trusted-lending-circles-global-logo.svg"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775428/banner-tlc.svg"
+            />
+          </a>
+        </li>
+        <li className="WeTrustProductsBanner--product__wrapper">
+          <a
+            className="WeTrustProductsBanner--product__link"
+            href="https://spring.wetrust.io"
+          >
+            <img
+              alt="Spring"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775427/banner-spring.svg"
+            />
+          </a>
+        </li>
+        <li className="WeTrustProductsBanner--product__wrapper">
+          <a
+            className="WeTrustProductsBanner--product__link"
+            href="https://staking.wetrust.io"
+          >
+            <img
+              alt="Staking"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775427/banner-staking.svg"
             />
           </a>
         </li>
@@ -64,7 +64,7 @@ export const WeTrustProductsBanner = (): JSX.Element => {
           >
             <img
               alt="CryptoUnlocked"
-              src="https://d1pzjb43ehhiia.cloudfront.net/logo-images/crypto-unlocked-global-logo.svg"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775427/banner-cu.svg"
             />
           </a>
         </li>
@@ -75,7 +75,7 @@ export const WeTrustProductsBanner = (): JSX.Element => {
           >
             <img
               alt="TrustedOracle"
-              src="https://d1pzjb43ehhiia.cloudfront.net/logo-images/trusted-oracle-global-logo.svg"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775429/banner-to.svg"
             />
           </a>
         </li>
@@ -86,7 +86,18 @@ export const WeTrustProductsBanner = (): JSX.Element => {
           >
             <img
               alt="Grants"
-              src="https://d1pzjb43ehhiia.cloudfront.net/logo-images/wetrust-grants-global-logo.svg"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775427/banner-grants.svg"
+            />
+          </a>
+        </li>
+        <li className="WeTrustProductsBanner--product__wrapper">
+          <a
+            className="WeTrustProductsBanner--product__link"
+            href="https://id.wetrust.io"
+          >
+            <img
+              alt="Identity"
+              src="https://res.cloudinary.com/wetrust-cryptounlocked/image/upload/v1577775427/banner-identity-logo.svg"
             />
           </a>
         </li>

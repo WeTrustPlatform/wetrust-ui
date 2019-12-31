@@ -118,12 +118,12 @@ const BlogPost = ({ blog }: BlogPostProps): JSX.Element => {
           right={0}
         />
         <Box marginTop={96} marginLeft={32} marginRight="10%">
-          <Box height={64} overflow="hidden">
+          <Box height={80} overflow="hidden">
             <Heading size="xlarge" color="white">
               {title}
             </Heading>
           </Box>
-          <Box marginTop={8} marginRight="10%" height={78} overflow="hidden">
+          <Box marginTop={8} marginRight="10%" height={90} overflow="hidden">
             <Paragraph color="#ffffff">
               {description ? description.substr(0, 256) : ''}
             </Paragraph>
