@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.7...v1.9.0) (2019-12-31)
+
+
+### Features
+
+* general update ([2f980bd](https://github.com/WeTrustPlatform/wetrust-ui/commit/2f980bd))
+
 ## [1.8.7](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.6...v1.8.7) (2019-12-17)
 
 
