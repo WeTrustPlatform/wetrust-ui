@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.9.0...v1.9.1) (2020-01-02)
+
+
+### Bug Fixes
+
+* update nav bar font ([f2159f4](https://github.com/WeTrustPlatform/wetrust-ui/commit/f2159f4))
+
 # [1.9.0](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.8.7...v1.9.0) (2019-12-31)
 
 
