@@ -33,7 +33,9 @@ const DesktopNavigationBarLink = (props: LinkProps): JSX.Element => {
       style={{ textDecoration: 'none', height: '100%' }}
     >
       <Box justifyContent="center" height="100%" paddingHorizontal={16}>
-        <Text color="link">{children}</Text>
+        <Text size={16} weight="600" color="link">
+          {children}
+        </Text>
       </Box>
     </Link>
   );
