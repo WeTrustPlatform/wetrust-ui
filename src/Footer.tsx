@@ -55,7 +55,7 @@ export const Footer = (props: FooterProps): JSX.Element => {
         </div>
       </div>
       <span className="Footer--copyright">
-        © WeTrust 2019 - All Right Reserved
+        © WeTrust 2020 - All Right Reserved
       </span>
     </div>
   );
