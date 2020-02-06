@@ -1,3 +1,10 @@
+## [1.9.2](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.9.1...v1.9.2) (2020-02-06)
+
+
+### Bug Fixes
+
+* package versions and peerdeps ([ab71723](https://github.com/WeTrustPlatform/wetrust-ui/commit/ab71723))
+
 ## [1.9.1](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.9.0...v1.9.1) (2020-01-02)
 
 
