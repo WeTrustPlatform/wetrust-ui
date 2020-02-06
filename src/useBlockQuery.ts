@@ -1,12 +1,12 @@
 import React from 'react';
 // eslint-disable-next-line
-import { Block } from 'web3/eth/types';
+import { BlockTransactionString } from 'web3-eth';
 
 import { useWeb3 } from './Web3Provider';
 
 export const useFetchBlock = (): ((
   blockNumber: number | 'latest',
-) => Promise<Block>) => {
+) => Promise<BlockTransactionString>) => {
   const { web3 } = useWeb3();
 
   return React.useCallback(
