@@ -50,7 +50,7 @@
     "@semantic-release/github": "5.5.8",
     "@semantic-release/npm": "5.3.5",
     "@semantic-release/release-notes-generator": "7.3.5",
-    "@storybook/react": "5.2.4",
+    "@storybook/react": "5.3.17",
     "@types/bn.js": "4.11.6",
     "@types/jest": "24.9.1",
     "@types/react": "16.9.23",
