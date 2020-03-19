@@ -85,7 +85,7 @@
     "react-dom": "16.10.2",
     "react-native": "0.61.2",
     "react-native-testing-library": "1.13.0",
-    "react-native-web": "0.11.5",
+    "react-native-web": "0.12.2",
     "react-router": "5.1.2",
     "react-router-dom": "5.1.2",
     "react-test-renderer": "16.10.2",
@@ -99,7 +99,7 @@
     "react": "^16.8.0",
     "react-art": "^16.8.0",
     "react-dom": "^16.8.0",
-    "react-native-web": "^0.10.x",
+    "react-native-web": "^0.10.x || ^0.12.0",
     "react-router": "^4.x.x || 5.x.x",
     "react-router-dom": "^4.x.x || 5.x.x",
     "web3": "^1.x.x"
