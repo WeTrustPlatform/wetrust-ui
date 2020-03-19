@@ -91,7 +91,7 @@
     "react-test-renderer": "16.10.2",
     "rimraf": "2.6.3",
     "semantic-release": "15.14.0",
-    "ts-jest": "24.0.2",
+    "ts-jest": "24.3.0",
     "typescript": "3.8.3",
     "web3": "1.2.6"
   },
