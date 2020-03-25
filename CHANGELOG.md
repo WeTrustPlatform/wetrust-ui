@@ -1,3 +1,9 @@
+## [1.9.5](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.9.4...v1.9.5) (2020-03-25)
+
+### Bug Fixes
+
+- **deps:** update dependency react-use to v13.27.1 ([3d3e3ab](https://github.com/WeTrustPlatform/wetrust-ui/commit/3d3e3ab))
+
 ## [1.9.4](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.9.3...v1.9.4) (2020-03-19)
 
 ### Bug Fixes
