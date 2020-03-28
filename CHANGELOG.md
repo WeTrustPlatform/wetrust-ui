@@ -1,3 +1,10 @@
+## [1.9.6](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.9.5...v1.9.6) (2020-03-28)
+
+### Bug Fixes
+
+- **deps:** update dependency @truffle/contract to v4.1.14 ([96a0b02](https://github.com/WeTrustPlatform/wetrust-ui/commit/96a0b02))
+- **deps:** update dependency date-fns to v2.11.1 ([e2d3bab](https://github.com/WeTrustPlatform/wetrust-ui/commit/e2d3bab))
+
 ## [1.9.5](https://github.com/WeTrustPlatform/wetrust-ui/compare/v1.9.4...v1.9.5) (2020-03-25)
 
 ### Bug Fixes
