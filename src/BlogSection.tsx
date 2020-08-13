@@ -156,7 +156,7 @@ export const BlogSection = (): JSX.Element => {
 
   React.useEffect(() => {
     fetch(
-      'https://lhrjjp6ona.execute-api.us-west-2.amazonaws.com/default/fetchWeTrustMediumBlogFeeds',
+      'https://wetrust-proxy-server.herokuapp.com/wetrust_medium_blog_feeds',
     )
       .then(response => response.json())
       .then(json => setBlogPosts(parseBlogPosts(json)));
