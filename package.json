@@ -90,7 +90,7 @@
     "react-router-dom": "5.1.2",
     "react-test-renderer": "16.13.1",
     "rimraf": "2.6.3",
-    "semantic-release": "17.0.4",
+    "semantic-release": "17.2.3",
     "ts-jest": "25.2.1",
     "typescript": "3.8.3",
     "web3": "1.2.6"
